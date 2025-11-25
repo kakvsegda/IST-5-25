@@ -1,0 +1,12 @@
+#Kuznecov Vadim
+name = str(input("Your name: "))
+address = str(input("Where do you live: "))
+birth = int(input("What year were you born in: "))
+home_phone = int(input("What is your home number: "))
+your_phone = int(input("What is your work number: "))
+wanted_position = str(input("Your wanted position: "))
+new_company= str(input("In company: "))
+company = str(input("Company you leaving: "))
+current_position = str(input(f"Your current position in {company}: "))
+print(f"Are you sure want to take {wanted_position} at {new_company}?  \n")
+print(input("Your answer: "))
