@@ -1,10 +1,11 @@
+#Python telegram bot
 import asyncio
 import logging
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters import Command
 
-API_TOKEN = '8319523345:AAEHnNVYc0a5y5MIL65_qKeGvm8B9wg5YKw'  # Replace with your actual bot API token
+API_TOKEN = ''
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
