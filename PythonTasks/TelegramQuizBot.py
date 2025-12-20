@@ -70,14 +70,16 @@ async def send_question(message: types.Message, user_id: int):
         total_questions = len(quiz_data)
         answered_questions = len(user_progress[user_id]["answered_questions"])
         
-        if correct_answer<6:
+        if correct_answers<6:
             result_text=f"You are a quite dumb piece of work. {correct_answers} out of 10."
-        elif correct_answer=6:
+        elif correct_answers=6:
             result_text=f"Congratulations on getting the Third place! {correct_answers} out of 10."
-        elif correct_answer>=7 and correct_answer<=8:
+        elif correct_answers>=7 and correct_answer<=8:
             result_text=f"Congratulations on almost getting the First place!! {correct_answers} out of 10"
+        elif correct_answers>8:
             result_text = f"Quiz over! You got {correct_answers} out of {total_questions} questions correct.\n" \
                 f"You answered {answered_questions} questions in total!"
+            
         
         # If the bot has already sent a message, edit it
         if user_progress[user_id]["last_message_id"]:
